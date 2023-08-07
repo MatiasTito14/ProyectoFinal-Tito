@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  /* COLORES MAIN MENU BOTONES */
+  .navbar-light .navbar-nav .nav-link.active,
+  .navbar-light .navbar-nav .show > .nav-link {
+    color: #f2f2f2;
+  }
+  .color-nav {
+    background-color: rgb(255, 123, 0) !important;
+  }
+  
+  /* COLOR MENU HAMBURGUESA */
+  .navbar-light .navbar-toggler {
+    color: rgb(255, 153, 0);
+    border-color: black;
+    background-color: #f2f2f2;
+  }
+  /* Estilos para la imagen de fondo */
+  .bg-image {
+    background-image: url('./ImagesCss/fondopomadas.jpeg'); /* Cambia 'ruta-de-tu-imagen.jpg' por la URL de tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 70vh; /* Ajusta la altura según tus necesidades */
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  /* Filtro negro transparente */
+  .bg-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor alfa para cambiar la opacidad del filtro */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  /* Estilos para el texto */
+  .text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+  /* Estilos responsivos para pantallas menores a 1440px */
+  @media (max-width: 1326px) {
+    .title {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      margin-top: 10%;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      margin-bottom: 10%;
+    }
+  }
+
+/* CARDS */
+.card-text.price {
+    font-family: 'Arial';
+    color: orangered;
+  }
+.card-title{
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card-text{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* FOOTER */
+.text-orange {
+    color: orange;
+  }
+  .img-fluid-logo {
+    width: 10vw;
+    height: 23vh;
+  }
+  .img-logo {
+    max-width: 40%; /* La imagen no superará el ancho del contenedor */
+    height: auto; /* La altura se ajustará proporcionalmente */
+  }
+  .list-unstyled li a {
+    text-decoration: none;
+  }

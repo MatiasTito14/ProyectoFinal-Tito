@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+/* COLORES MAIN MENU BOTONES */
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #f2f2f2;
+}
+.color-nav {
+  background-color: rgb(255, 123, 0) !important;
+}
+
+/* COLOR MENU HAMBURGUESA */
+.navbar-light .navbar-toggler {
+  color: rgb(255, 153, 0);
+  border-color: black;
+  background-color: #f2f2f2;
+}
+/* LARGO DEL MAIN EN RESPONSIVE */
+@media (max-width: 768px) {
+  #responsiveMenu {
+    min-height: 870vh;
+  }
+}
+  .card {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-icon {
+    font-size: 3rem;
+    color: orange;
+  }
+
+  @media (max-width: 767px) {
+    .card {
+      margin: 10px auto;
+    }
+  }
+
+  /* CONTACTO */
+.custom-contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Arial", sans-serif;
+    color: #f2f2f2;
+  }
+  .custom-contact-form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: orangered;
+  }
+  .custom-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Arial", sans-serif;
+  }
+  /* Estilos generales para la sección de contacto */
+#contacto {
+    padding: 1rem; /* Añade espacio alrededor del contenido */
+  }
+  .custom-contact-container {
+    max-width: 600px; /* Limita el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+  }
+  
+  /* Media query para medidas de 768px y menores */
+  @media (max-width: 768px) {
+    .custom-contact-container {
+      max-width: 80%; /* Utiliza el 80% del ancho disponible en pantallas pequeñas */
+      padding: 1rem; /* Añade espacio alrededor del contenido */
+      margin-top: 5rem;
+    }
+  }
+  /* FOOTER */
+.text-orange {
+    color: orange;
+  }
+  .img-fluid-logo {
+    width: 10vw;
+    height: 23vh;
+  }
+  .img-logo {
+    max-width: 40%; /* La imagen no superará el ancho del contenedor */
+    height: auto; /* La altura se ajustará proporcionalmente */
+  }
+  .list-unstyled li a {
+    text-decoration: none;
+  }
+  
