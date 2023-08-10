@@ -20,7 +20,7 @@ body {
 /* LARGO DEL MAIN EN RESPONSIVE */
 @media (max-width: 768px) {
   #responsiveMenu {
-    min-height: 870vh;
+    min-height: 900vh;
   }
 }
   .card {
@@ -69,10 +69,10 @@ body {
   }
   /* Estilos generales para la sección de contacto */
 #contacto {
-    padding: 1rem; /* Añade espacio alrededor del contenido */
+    padding: 3rem; /* Añade espacio alrededor del contenido */
+    margin-bottom: 6rem;
   }
   .custom-contact-container {
-    max-width: 600px; /* Limita el ancho máximo del contenedor */
     margin: 0 auto; /* Centra el contenedor */
   }
   

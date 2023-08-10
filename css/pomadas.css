@@ -19,10 +19,10 @@ body {
   }
   /* Estilos para la imagen de fondo */
   .bg-image {
-    background-image: url('./ImagesCss/fondopomadas.jpeg'); /* Cambia 'ruta-de-tu-imagen.jpg' por la URL de tu imagen */
+    background-image: url('./ImagesCss/fondopomadas.jpeg');
     background-size: cover;
     background-position: center;
-    height: 70vh; /* Ajusta la altura según tus necesidades */
+    height: 70vh; /* Ajusta la altura */
     position: relative;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
@@ -55,7 +55,7 @@ body {
   .subtitle {
     font-size: 1.5rem;
   }
-  /* Estilos responsivos para pantallas menores a 1440px */
+  /* Estilos responsivos para pantallas menores a 1326px */
   @media (max-width: 1326px) {
     .title {
       font-size: 2rem;
