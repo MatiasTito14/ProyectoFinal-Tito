@@ -1,0 +1,20 @@
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: $tertiary-color;
+}
+
+.color-nav {
+  background-color: $secondary-color !important;
+}
+
+.navbar-light .navbar-toggler {
+  color: $primary-color;
+  border-color: $border-color;
+  background-color: $tertiary-color;
+}
+
+@media (max-width: 768px) {
+  #responsiveMenu {
+    min-height: 750vh;
+  }
+}

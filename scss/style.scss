@@ -1,0 +1,130 @@
+@import"./modules/variables";
+@import"./modules/body.scss";
+@import"./modules/color-header";
+
+// Estilos para la clase custom-row
+.custom-row {
+  height: $vh - 60;
+}
+
+// Estilos para imágenes fluidas
+.img-fluid {
+  width: 50vw;
+  height: $vh - 25;
+}
+
+// Estilos para tarjetas
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: $background-color;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+
+  .card-title {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    color: $primary-color;
+  }
+
+  .card-text {
+    color: $text-color;
+  }
+}
+
+// Estilos para botón primario
+.btn-primary {
+  color: #fff;
+  background-color: $secondary-color;
+  border-color: solid $border-color;
+}
+
+// Estilos para el carrusel
+.carousel-container {
+  max-width: 75%;
+  margin: 0 auto;
+  margin-bottom: 10%;
+  border: 2px solid $carousel-border-color;
+  height: auto;
+  width: auto;
+  overflow-x: hidden;
+
+  .carousel-inner {
+    max-width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: none;
+    border: 0;
+    opacity: $carousel-nav-opacity;
+    transition: opacity 0.15s ease;
+  }
+}
+#seccionGaleria{
+  overflow-x: hidden;
+}
+// Estilos para pantallas menores a 1440px pero mayores o iguales a 768px
+@media (max-width: 1439px) {
+  .carousel-container {
+    margin-top: 28rem;
+  }
+}
+
+// Estilos para pantallas menores a 767px
+@media (max-width: 767px) {
+  .custom-row {
+    height: auto;
+  }
+
+  .img-fluid {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    .card-title,
+    .card-text {
+      margin: 0.5rem;
+    }
+  }
+
+  .btn-primary {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .carousel-container {
+    max-width: 80%;
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 20%;
+    }
+  }
+}
+
+
+
+
+@import"./modules/footer";

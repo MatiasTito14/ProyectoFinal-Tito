@@ -1,0 +1,71 @@
+@import"./modules/variables";
+@import"./modules/body.scss";
+@import"./modules/color-header";
+ 
+/* Estilos para la imagen de fondo */
+.bg-image {
+  background-image: url('./ImagesCss/fondopomadas.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 70vh; /* Ajusta la altura */
+  position: relative;
+  font-family: $font-family;
+}
+/* Filtro negro transparente */
+.bg-overlay {
+  background-color: $background-overlay-color;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Estilos para el texto */
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $white-color;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+}
+/* Estilos responsivos para pantallas menores a 1326px */
+@media (max-width: 1326px) {
+  .title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 10%;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 10%;
+  }
+}
+
+/* CARDS */
+.card-text.price {
+  font-family: $font-family;
+  color: $secondary-color;
+}
+.card-title {
+  font-weight: bold;
+  font-family: $cambria-font;
+}
+.card-text {
+  font-family: $lucida-font;
+}
+  
+@import"./modules/footer"
+  

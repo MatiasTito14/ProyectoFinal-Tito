@@ -1,0 +1,68 @@
+@import"./modules/variables";
+@import"./modules/body.scss";
+@import"./modules/color-header";
+
+.card {
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  font-size: 3rem;
+  color: $secondary-color; /* Cambié a la variable secondary-color */
+}
+
+@media (max-width: 767px) {
+  .card {
+    margin: 10px auto;
+  }
+}
+
+/* CONTACTO */
+.custom-contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: $font-family; /* Usando la variable font-family */
+  color: $text-color; /* Usando la variable text-color */
+}
+.custom-contact-form {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid $border-color; /* Usando la variable border-color */
+  border-radius: 5px;
+  background-color: $secondary-color; /* Usando la variable secondary-color */
+}
+.custom-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: $font-family; /* Usando la variable font-family */
+}
+/* Estilos generales para la sección de contacto */
+#contacto {
+  padding: 3rem; /* Añade espacio alrededor del contenido */
+  margin-bottom: 6rem;
+}
+.custom-contact-container {
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Media query para medidas de 768px y menores */
+@media (max-width: 768px) {
+  .custom-contact-container {
+    max-width: 80%; /* Utiliza el 80% del ancho disponible en pantallas pequeñas */
+    padding: 1rem; /* Añade espacio alrededor del contenido */
+    margin-top: 5rem;
+  }
+}
+
+
+@import"./modules/footer";
