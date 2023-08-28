@@ -1,21 +1,28 @@
 @import"./modules/variables";
+@import"./modules/condicionales";
 @import"./modules/body.scss";
 @import"./modules/color-header";
+@import"./modules/footer";
+@import"./modules/mixing";
 
 // Estilos para la clase custom-row
 .custom-row {
-  height: $vh - 60;
+  height: auto;
 }
 
 // Estilos para imágenes fluidas
 .img-fluid {
   width: 50vw;
-  height: $vh - 25;
+  height: auto;
 }
 
 // Estilos para tarjetas
+.largo-seccion-cards{
+  margin-top: 4%;
+}
 .card {
   position: relative;
+  height: 100%;
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -24,6 +31,7 @@
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  margin-bottom: 20px; /* Agrega margen inferior a las tarjetas */
 
   .card-title {
     margin-bottom: 0.5rem;
@@ -35,96 +43,61 @@
     color: $text-color;
   }
 }
-
 // Estilos para botón primario
 .btn-primary {
-  color: #fff;
-  background-color: $secondary-color;
-  border-color: solid $border-color;
+  @include custom-primary-button;
 }
 
-// Estilos para el carrusel
-.carousel-container {
-  max-width: 75%;
+// Estilos para el acordeón
+.accordion {
+  padding: 5%;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  max-width: 70%;
   margin: 0 auto;
-  margin-bottom: 10%;
+
+  .accordion-button {
+    background-color: #ff6600;
+    color: #fff;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    .accordion-title {
+      color: #000;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+  }
+
+  .accordion-body {
+    color: #000;
+  }
+}
+
+// Estilos para el carrousel achicado de largo, con borde naranja y centrado
+#carouselExampleCaptions {
   border: 2px solid $carousel-border-color;
-  height: auto;
-  width: auto;
-  overflow-x: hidden;
+  max-width: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 5%;
+  
 
   .carousel-inner {
-    max-width: 100%;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
+      img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+      }
+  }
+  .color-titulo{
+    background-color: $secondary-color !important;
   }
 
-  .carousel-control-prev,
-  .carousel-control-next {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 15%;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    background: none;
-    border: 0;
-    opacity: $carousel-nav-opacity;
-    transition: opacity 0.15s ease;
-  }
-}
-#seccionGaleria{
-  overflow-x: hidden;
-}
-// Estilos para pantallas menores a 1440px pero mayores o iguales a 768px
-@media (max-width: 1439px) {
-  .carousel-container {
-    margin-top: 28rem;
+  .carousel-indicators, .carousel-control-prev, .carousel-control-next {
+      margin-bottom: 10px;
   }
 }
 
-// Estilos para pantallas menores a 767px
-@media (max-width: 767px) {
-  .custom-row {
-    height: auto;
-  }
-
-  .img-fluid {
-    width: 100%;
-    height: auto;
-  }
-
-  .card {
-    .card-title,
-    .card-text {
-      margin: 0.5rem;
-    }
-  }
-
-  .btn-primary {
-    font-size: 14px;
-    padding: 8px 16px;
-  }
-
-  .carousel-container {
-    max-width: 80%;
-
-    .carousel-control-prev,
-    .carousel-control-next {
-      width: 20%;
-    }
-  }
-}
-
-
-
-
-@import"./modules/footer";

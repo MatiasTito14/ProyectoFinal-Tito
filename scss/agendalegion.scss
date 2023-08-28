@@ -2,6 +2,10 @@
 @import"./modules/variables";
 @import"./modules/body.scss";
 @import"./modules/color-header";
+@import"./modules/condicionales";
+@import"./modules/footer";
+@import"./modules/bucle";
+
 
 .tituloAgenda {
   text-align: center;
@@ -49,18 +53,6 @@ label {
   margin-bottom: 10px;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th,
-td {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: center;
-}
-
 th {
   background-color: $tertiary-color;
 }
@@ -78,10 +70,7 @@ td[data-dia]:hover {
 }
 
 /* table */
-/* Personaliza el estilo si es necesario */
 .table td[data-dia]::before {
   content: attr(data-hora);
   display: block;
 }
-
-@import"./modules/footer"

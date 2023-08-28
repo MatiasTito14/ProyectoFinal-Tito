@@ -1,0 +1,10 @@
+@mixin custom-primary-button {
+    color: #fff;
+    background-color: $secondary-color;
+    border-color: 2px solid $border-color;
+    
+    &:hover {
+      background-color: darkblue($secondary-color, 10%);
+    }
+  }
+  

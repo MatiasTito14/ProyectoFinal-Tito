@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Variables Footer */
 body {
   font-family: Arial, sans-serif;
   overflow-x: hidden;
@@ -10,7 +11,7 @@ body {
 }
 
 .color-nav {
-  background-color: rgb(255, 123, 0) !important;
+  background-color: rgb(255, 100, 0) !important;
 }
 
 .navbar-light .navbar-toggler {
@@ -19,11 +20,290 @@ body {
   background-color: #f2f2f2;
 }
 
+.color-nav {
+  background-color: #fff; /* Fondo blanco */
+  transition: background-color 0.3s ease; /* Transición suave para cambios de color */
+}
+
+/* Estilos iniciales para la barra de navegación */
+.navbar {
+  position: fixed; /* La barra de navegación estará fija en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: top 0.3s ease; /* Transición suave para cambios en la posición vertical */
+  z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.navbar-nav .nav-item {
+  list-style: none;
+  margin: 0;
+  padding: 0 20px;
+}
+.navbar-nav .nav-item .nav-link {
+  color: #000; /* Color de enlace normal */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Transición suave para cambios de color */
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: #1a1a1a; /* Cambia el color al pasar el cursor */
+  transform: scale(1.1); /* Aplica la animación de zoom */
+}
+
+/* Estilos para la barra de navegación al hacer hover */
+.color-nav:hover {
+  background-color: #1a1a1a; /* Cambia el color de fondo al hacer hover */
+  transition: background-color 0.3s ease; /* Transición suave para cambios de color */
+}
+
 @media (max-width: 768px) {
   #responsiveMenu {
     min-height: 750vh;
   }
 }
+@media (max-width: 320px) {
+  .largo-seccion-cards {
+    height: auto;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .largo-seccion-cards {
+    height: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .largo-seccion-cards {
+    height: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .largo-seccion-cards {
+    height: auto;
+  }
+}
+/* Responsivo con condicionales */
+@media (max-width: 768px) {
+  table {
+    font-size: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  table {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  table {
+    font-size: 14px;
+  }
+}
+#contacto {
+  padding: 3rem;
+  margin-bottom: 6rem;
+}
+#contacto .custom-contact-container {
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  #contacto .custom-contact-container {
+    max-width: 80%;
+    padding: 1rem;
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 768px) {
+  #contacto .custom-contact-container {
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 320px) {
+  #contacto .custom-contact-container {
+    padding: 0.25rem;
+  }
+}
+
+.bg-image {
+  background-image: url("./ImagesCss/tarjetalegion.png");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  position: relative;
+  font-family: 'Lucida Sans, "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif';
+}
+@media (max-width: 1024px) {
+  .bg-image {
+    height: 50vh;
+  }
+}
+@media (max-width: 768px) {
+  .bg-image {
+    height: 40vh;
+  }
+}
+@media (max-width: 320px) {
+  .bg-image {
+    height: 30vh;
+  }
+}
+.bg-image:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  pointer-events: none;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 100, 0);
+  text-align: center;
+}
+.text-container .title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .text-container .title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 320px) {
+  .text-container .title {
+    font-size: 1.5rem;
+  }
+}
+.text-container .subtitle {
+  font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  .text-container .subtitle {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 320px) {
+  .text-container .subtitle {
+    font-size: 0.8rem;
+  }
+}
+
+/* FOOTER */
+.custom-footer {
+  background-color: #333;
+  color: orange;
+  text-align: center;
+  padding: 30px 0;
+}
+.custom-footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.custom-footer .container .logo-container {
+  margin-bottom: 20px;
+}
+.custom-footer .container .logo-container .logo {
+  max-width: 50px;
+  height: auto;
+}
+.custom-footer .container .links-container {
+  text-align: center;
+}
+.custom-footer .container .links-container .title-footer {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.custom-footer .container .links-container .link-list {
+  list-style: none;
+  padding: 0;
+}
+.custom-footer .container .links-container .link-list li {
+  margin-bottom: 5px;
+}
+.custom-footer .container .links-container .link-list li .link {
+  text-decoration: none;
+  color: #ff6600;
+}
+.custom-footer .container .links-container .link-list li .link:hover {
+  text-decoration: underline;
+}
+.custom-footer .container .links-container .link-list li .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 160px;
+}
+.custom-footer .container .links-container .link-list li .dropdown-menu .dropdown-item {
+  color: orange;
+  padding: 8px 12px;
+  display: block;
+}
+.custom-footer .container .links-container .link-list li .dropdown-menu .dropdown-item:hover {
+  background-color: #555;
+  color: #fff;
+}
+.custom-footer .container .links-container .link-list li:hover .dropdown-menu {
+  display: block;
+}
+.custom-footer .container .copy-container {
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+.custom-footer .container .copy {
+  font-size: 14px;
+  margin: 0;
+}
+
+.text-orange {
+  color: #ff6600 !important;
+}
+
+/* Bucle para generar estilos para cada hora */
+.hora-9 td[data-hora="9:00"] {
+  background-color: rgba(255, 153, 0, 0.712);
+}
+.hora-9 td[data-hora="9:40"] {
+  background-color: rgba(255, 153, 0, 0.712);
+}
+
+.hora-10 td[data-hora="10:00"] {
+  background-color: rgba(255, 153, 0, 0.712);
+}
+.hora-10 td[data-hora="10:40"] {
+  background-color: rgba(255, 153, 0, 0.712);
+}
+
+.hora-11 td[data-hora="11:00"] {
+  background-color: rgba(255, 153, 0, 0.712);
+}
+.hora-11 td[data-hora="11:40"] {
+  background-color: rgba(255, 153, 0, 0.712);
+}
+
+.hora-12 td[data-hora="12:00"] {
+  background-color: rgba(255, 153, 0, 0.712);
+}
+.hora-12 td[data-hora="12:40"] {
+  background-color: rgba(255, 153, 0, 0.712);
+}
+
 .tituloAgenda {
   text-align: center;
   background-color: black;
@@ -70,18 +350,6 @@ label {
   margin-bottom: 10px;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th,
-td {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: center;
-}
-
 th {
   background-color: #f2f2f2;
 }
@@ -95,33 +363,13 @@ td[data-dia] {
 }
 
 td[data-dia]:hover {
-  background-color: rgb(255, 123, 0);
+  background-color: rgb(255, 100, 0);
 }
 
 /* table */
-/* Personaliza el estilo si es necesario */
 .table td[data-dia]::before {
   content: attr(data-hora);
   display: block;
-}
-
-/* FOOTER */
-.text-orange {
-  color: orange;
-}
-
-.img-fluid-logo {
-  width: 10vw;
-  height: 23vh;
-}
-
-.img-logo {
-  max-width: 40%;
-  height: auto;
-}
-
-.list-unstyled li a {
-  text-decoration: none;
 }
 
 /*# sourceMappingURL=agendalegion.css.map */

@@ -1,0 +1,11 @@
+/* Bucle para generar estilos para cada hora */
+@for $hora from 9 through 12 {
+    .hora-#{$hora} {
+      td[data-hora='#{$hora}:00'] {
+        background-color: rgba($primary-color, 0.712);
+      }
+      td[data-hora='#{$hora}:40'] {
+        background-color: rgba($primary-color, 0.712);
+      }
+    }
+  }

@@ -13,8 +13,52 @@
   background-color: $tertiary-color;
 }
 
-@media (max-width: 768px) {
-  #responsiveMenu {
-    min-height: 750vh;
+// ANIMACION BARRA MENU
+.color-nav {
+  background-color: #fff; /* Fondo blanco */
+  transition: background-color 0.3s ease; /* Transición suave para cambios de color */
+}
+/* Estilos iniciales para la barra de navegación */
+.navbar {
+  position: fixed; /* La barra de navegación estará fija en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: top 0.3s ease; /* Transición suave para cambios en la posición vertical */
+  z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+}
+
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  .nav-item {
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+
+    .nav-link {
+      color: #000; /* Color de enlace normal */
+      text-decoration: none;
+      transition: color 0.3s ease; /* Transición suave para cambios de color */
+
+      &:hover {
+        color: #1a1a1a; /* Cambia el color al pasar el cursor */
+        transform: scale(1.1); /* Aplica la animación de zoom */
+      }
+    }
   }
+}
+
+/* Estilos para la barra de navegación al hacer hover */
+.color-nav:hover {
+  background-color: #1a1a1a; /* Cambia el color de fondo al hacer hover */
+  transition: background-color 0.3s ease; /* Transición suave para cambios de color */
 }
