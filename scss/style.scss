@@ -79,8 +79,10 @@
 // Estilos para el carrousel achicado de largo, con borde naranja y centrado
 #carouselExampleCaptions {
   border: 2px solid $carousel-border-color;
-  max-width: 50%;
-  margin: 0 auto;
+  width: 50%;
+  height: auto;
+  margin: auto;
+  padding: auto;
   overflow: hidden;
   margin-bottom: 5%;
   

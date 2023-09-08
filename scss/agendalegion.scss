@@ -69,8 +69,51 @@ td[data-dia]:hover {
   background-color: $secondary-color;
 }
 
-/* table */
+// TABLA
 .table td[data-dia]::before {
   content: attr(data-hora);
   display: block;
+}
+/* Añade un nuevo estilo para las casillas seleccionadas */
+td.selected {
+  background-color: rgba(0, 0, 0, 0.712); /* Color oscuro similar al hover */
+  color: white;
+}
+
+
+// BOTONES
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-agendar,
+.btn-reset {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn-agendar:disabled,
+.btn-reset:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+/* Añade estilos para indicar que los campos son obligatorios */
+.select-container,
+.table {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.required-field-error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
 }

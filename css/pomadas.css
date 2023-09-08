@@ -71,6 +71,45 @@ body {
     min-height: 750vh;
   }
 }
+#carouselExampleCaptions {
+  border: 2px solid orange;
+  width: 50%;
+  height: auto;
+  margin: auto;
+  padding: auto;
+  overflow: hidden;
+  margin-bottom: 5%;
+}
+@media (max-width: 768px) {
+  #carouselExampleCaptions {
+    border: 2px solid orange;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    padding: auto;
+    overflow: hidden;
+    margin-bottom: 5%;
+  }
+}
+#carouselExampleCaptions .carousel-inner img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#carouselExampleCaptions .color-titulo {
+  background-color: rgb(255, 100, 0) !important;
+}
+#carouselExampleCaptions .carousel-indicators,
+#carouselExampleCaptions .carousel-control-prev,
+#carouselExampleCaptions .carousel-control-next {
+  margin-bottom: 10px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  #carouselExampleCaptions {
+    width: 100%;
+  }
+}
+
 @media (max-width: 320px) {
   .largo-seccion-cards {
     height: auto;
@@ -91,7 +130,6 @@ body {
     height: auto;
   }
 }
-/* Responsivo con condicionales */
 @media (max-width: 768px) {
   table {
     font-size: 10px;

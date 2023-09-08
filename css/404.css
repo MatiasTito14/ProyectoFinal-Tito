@@ -1,5 +1,71 @@
 @charset "UTF-8";
 /* Variables Footer */
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #f2f2f2;
+}
+
+.color-nav {
+  background-color: rgb(255, 100, 0) !important;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgb(255, 153, 0);
+  border-color: black;
+  background-color: #f2f2f2;
+}
+
+.color-nav {
+  background-color: #fff; /* Fondo blanco */
+  transition: background-color 0.3s ease; /* Transición suave para cambios de color */
+}
+
+/* Estilos iniciales para la barra de navegación */
+.navbar {
+  position: fixed; /* La barra de navegación estará fija en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: top 0.3s ease; /* Transición suave para cambios en la posición vertical */
+  z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.navbar-nav .nav-item {
+  list-style: none;
+  margin: 0;
+  padding: 0 20px;
+}
+.navbar-nav .nav-item .nav-link {
+  color: #000; /* Color de enlace normal */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Transición suave para cambios de color */
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: #1a1a1a; /* Cambia el color al pasar el cursor */
+  transform: scale(1.1); /* Aplica la animación de zoom */
+}
+
+/* Estilos para la barra de navegación al hacer hover */
+.color-nav:hover {
+  background-color: #1a1a1a; /* Cambia el color de fondo al hacer hover */
+  transition: background-color 0.3s ease; /* Transición suave para cambios de color */
+}
+
 @media (max-width: 768px) {
   #responsiveMenu {
     min-height: 750vh;
@@ -175,72 +241,6 @@
   }
 }
 
-body {
-  font-family: Arial, sans-serif;
-  overflow-x: hidden;
-}
-
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .show > .nav-link {
-  color: #f2f2f2;
-}
-
-.color-nav {
-  background-color: rgb(255, 100, 0) !important;
-}
-
-.navbar-light .navbar-toggler {
-  color: rgb(255, 153, 0);
-  border-color: black;
-  background-color: #f2f2f2;
-}
-
-.color-nav {
-  background-color: #fff; /* Fondo blanco */
-  transition: background-color 0.3s ease; /* Transición suave para cambios de color */
-}
-
-/* Estilos iniciales para la barra de navegación */
-.navbar {
-  position: fixed; /* La barra de navegación estará fija en la parte superior */
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  transition: top 0.3s ease; /* Transición suave para cambios en la posición vertical */
-  z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
-}
-
-.navbar-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-.navbar-nav .nav-item {
-  list-style: none;
-  margin: 0;
-  padding: 0 20px;
-}
-.navbar-nav .nav-item .nav-link {
-  color: #000; /* Color de enlace normal */
-  text-decoration: none;
-  transition: color 0.3s ease; /* Transición suave para cambios de color */
-}
-.navbar-nav .nav-item .nav-link:hover {
-  color: #1a1a1a; /* Cambia el color al pasar el cursor */
-  transform: scale(1.1); /* Aplica la animación de zoom */
-}
-
-/* Estilos para la barra de navegación al hacer hover */
-.color-nav:hover {
-  background-color: #1a1a1a; /* Cambia el color de fondo al hacer hover */
-  transition: background-color 0.3s ease; /* Transición suave para cambios de color */
-}
-
 /* FOOTER */
 .custom-footer {
   background-color: #333;
@@ -313,92 +313,34 @@ body {
   color: #ff6600 !important;
 }
 
-.custom-row {
-  height: auto;
-}
-
-.img-fluid {
-  width: 50vw;
-  height: auto;
-}
-
-.largo-seccion-cards {
-  margin-top: 4%;
-}
-
-.card {
-  position: relative;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
-  margin-bottom: 20px; /* Agrega margen inferior a las tarjetas */
-}
-.card .card-title {
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
-  color: rgb(255, 153, 0);
-}
-.card .card-text {
-  color: #f2f2f2;
-}
-
-.btn-primary {
-  color: #fff;
-  background-color: rgb(255, 100, 0);
-  border-color: 2px solid black;
-}
-.btn-primary:hover {
-  background-color: darkblue(rgb(255, 100, 0), 10%);
-}
-
-.accordion {
-  padding: 5%;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  max-width: 70%;
+.container {
+  max-width: 800px;
   margin: 0 auto;
-}
-.accordion .accordion-button {
-  background-color: #ff6600;
-  color: #fff;
-}
-.accordion .accordion-button:focus {
-  box-shadow: none;
-}
-.accordion .accordion-button .accordion-title {
-  color: #000;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-.accordion .accordion-body {
-  color: #000;
+  padding: 50px;
 }
 
-#carouselExampleCaptions {
-  border: 2px solid orange;
-  width: 50%;
-  height: auto;
-  margin: auto;
-  padding: auto;
-  overflow: hidden;
-  margin-bottom: 5%;
+h1 {
+  font-size: 48px;
+  color: #333;
+  text-align: center;
 }
-#carouselExampleCaptions .carousel-inner img {
-  object-fit: cover;
+
+p {
+  font-size: 24px;
+  color: #666;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.barber-image {
   width: 100%;
-  height: 100%;
-}
-#carouselExampleCaptions .color-titulo {
-  background-color: rgb(255, 100, 0) !important;
-}
-#carouselExampleCaptions .carousel-indicators, #carouselExampleCaptions .carousel-control-prev, #carouselExampleCaptions .carousel-control-next {
-  margin-bottom: 10px;
+  max-height: 400px;
+  margin-bottom: 20px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=404.css.map */
