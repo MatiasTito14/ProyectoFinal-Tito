@@ -68,5 +68,30 @@
 .card-text {
   font-family: $lucida-font;
 }
+// ESTILOS BOTONES CARDS
+
+.cart-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-button {
+  background-color: orange;
+  border: 1px solid black;
+  color: black;
+  padding: 5px 0; /* Reducido el padding horizontal */
+  font-size: 12px; /* Tamaño de fuente más pequeño */
+  margin: 0 100px; /* Reducido el margen horizontal a 2px */
+}
+
+#cart-item-Pomada\ Modeladora {
+  font-size: 18px;
+  font-weight: bold;
+}
+#cart-item-Cera\ Matte{
+  font-size: 18px;
+  font-weight: bold;
+}
 
   
