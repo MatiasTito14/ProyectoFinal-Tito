@@ -54,10 +54,35 @@
                                 target="_blank">Contacto</a>
                         </li>
                     </ul>
+                    <button class="btn btn-outline-light btn-sm custom-button" id="loginButton">
+                        <i class="fas fa-user"></i> Login
+                    </button>
                 </div>
             </div>
         </nav>
     </header>
+    <!-- INICIAR SESION Y CREAR CUENTA -->
+    <div class="container">
+        <div id="loginBox">
+          <form id="loginForm">
+            <h2>Iniciar Sesión</h2>
+            <input type="email" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button type="button" id="loginSubmit" required>Iniciar Sesión</button>
+          </form>
+          <p>¿No estás registrado? <a id="createAccountLink" href="#">Crea una cuenta</a></p>
+        </div>
+        <div id="signupBox" class="hidden">
+          <form id="signupForm">
+            <h2>Crear una cuenta</h2>
+            <input type="text" id="firstName" placeholder="Nombre" required>
+            <input type="text" id="lastName" placeholder="Apellido" required>
+            <input type="email" id="signupEmail" placeholder="Correo Electrónico" required>
+            <input type="password" id="signupPassword" placeholder="Contraseña" required>
+            <button type="button" id="signupSubmit" required>Registrarse</button>
+          </form>
+        </div>
+      </div>
 
     <main>
         <section class="largo-seccion-cards">
@@ -228,7 +253,7 @@
             prevScrollPos = currentScrollPos;
         });
     </script>
-
+    <script src="./js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
