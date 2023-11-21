@@ -1,6 +1,8 @@
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show > .nav-link {
   color: $tertiary-color;
+  font-weight: bold;
+  font-size: large;
 }
 
 .color-nav {
@@ -11,6 +13,7 @@
   color: $primary-color;
   border-color: $border-color;
   background-color: $tertiary-color;
+  margin-right: 100rem;
 }
 
 // ANIMACION BARRA MENU
@@ -18,6 +21,10 @@
   background-color: #fff; /* Fondo blanco */
   transition: background-color 0.3s ease; /* Transición suave para cambios de color */
 }
+.me-auto {
+  margin-right: 10rem!important;
+}
+
 /* Estilos iniciales para la barra de navegación */
 .navbar {
   position: fixed; /* La barra de navegación estará fija en la parte superior */
@@ -38,7 +45,6 @@
   height: 100%;
   margin: 0;
   padding: 0;
-  margin-left: 11%;
 
   .nav-item {
     list-style: none;
@@ -59,10 +65,12 @@
 }
 
 /* Estilos para la barra de navegación al hacer hover */
+
 .color-nav:hover {
   background-color: #1a1a1a; /* Cambia el color de fondo al hacer hover */
   transition: background-color 0.3s ease; /* Transición suave para cambios de color */
 }
+
 /* ESTILOS PARA EL CARRITO */
 #cart {
   display: flex;

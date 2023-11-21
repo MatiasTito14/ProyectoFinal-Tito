@@ -1,0 +1,15 @@
+[
+    {
+      "nombre": "Cera Matte",
+      "imagen": "../assets/images/ceramatte.jpeg",
+      "descripcion": "Cera de fijación para el cabello, con efecto mate aporta cuerpo y fijación de larga duración. No deja cabello graso, residuo, caspa ni polvillo. Estimula y fortalece el cabello",
+      "precio": 320.00
+    },
+    {
+      "nombre": "Pomada Modeladora",
+      "imagen": "../assets/images/pomadamodeladora.jpeg",
+      "descripcion": "La línea de pomadas para pelo Legion Barber funciona perfectamente en estilos clásicos, modernos, retro y antiguos para un aspecto que dura todo el día.",
+      "precio": 480.00
+    }
+  ]
+  

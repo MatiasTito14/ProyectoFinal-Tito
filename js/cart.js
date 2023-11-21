@@ -12,8 +12,24 @@ function saveCartToLocalStorage() {
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
+// Función para cargar dinámicamente los productos desde el archivo JSON
+function loadProducts() {
+  const url = "data/productos.json";
+
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      // Mostrar productos en el carrito
+      mostrarProductosEnCarrito(data);
+    })
+    .catch(error => console.error("Error al cargar el archivo JSON:", error));
+}
+
 // JavaScript para agregar y quitar productos al carrito
 document.addEventListener("DOMContentLoaded", function () {
+  // Llamar a la función para cargar los productos
+  loadProducts();
+
   // Obtener todos los elementos con el ID "cart-item-X"
   const cartItems = document.querySelectorAll('[id^="cart-item-"]');
 

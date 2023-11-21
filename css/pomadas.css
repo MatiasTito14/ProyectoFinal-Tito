@@ -8,6 +8,8 @@ body {
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show > .nav-link {
   color: #f2f2f2;
+  font-weight: bold;
+  font-size: large;
 }
 
 .color-nav {
@@ -18,11 +20,16 @@ body {
   color: rgb(255, 153, 0);
   border-color: black;
   background-color: #f2f2f2;
+  margin-right: 100rem;
 }
 
 .color-nav {
   background-color: #fff; /* Fondo blanco */
   transition: background-color 0.3s ease; /* Transición suave para cambios de color */
+}
+
+.me-auto {
+  margin-right: 10rem !important;
 }
 
 /* Estilos iniciales para la barra de navegación */
@@ -44,7 +51,6 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  margin-left: 11%;
 }
 .navbar-nav .nav-item {
   list-style: none;
@@ -126,8 +132,23 @@ input, button {
 }
 
 @media (max-width: 768px) {
-  #responsiveMenu {
-    min-height: 750vh;
+  .navbar-nav {
+    width: 33%;
+  }
+  .navbar-collapse {
+    width: 100%;
+    transition: width 0.3s;
+  }
+  .navbar-toggler:focus + .navbar-collapse,
+  .navbar-toggler:active + .navbar-collapse {
+    width: 33%;
+  }
+  .navbar-nav {
+    text-align: center;
+    margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+  }
+  .navbar-nav .nav-item {
+    width: 100%;
   }
 }
 #carouselExampleCaptions {
@@ -464,6 +485,4 @@ input, button {
   font-weight: bold;
 }
 
-
 /*# sourceMappingURL=pomadas.css.map */
-
